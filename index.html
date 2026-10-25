@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="راهنمای تعاملی Kali Linux، ابزارهای امنیتی، ترمینال آموزشی و آزمون دانش.">
+  <title>Kali Linux Lab</title>
+  <script>try{const t=localStorage.getItem('kali-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas>
+<nav class="nav"><div class="wrap nav-inner">
+  <a class="logo" href="#top" aria-label="رفتن به بالای صفحه"><span class="logo-mark">&gt;_</span><span>Kali<span class="logo-light">Lab</span></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو" aria-expanded="false">☰</button>
+  <ul id="navLinks"><li><a href="#about">معرفی</a></li><li><a href="#learn">مبانی</a></li><li><a href="#tools">ابزارها</a></li><li><a href="#terminal">ترمینال</a></li><li><a href="#quiz">آزمون</a></li></ul>
+  <button id="theme" class="icon-btn" type="button" aria-label="تغییر تم" title="تغییر تم">◐</button>
+</div></nav>
+<main id="top">
+<header class="wrap hero">
+  <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> راهنمای تعاملی امنیت سایبری</div>
+    <h1>Kali <span>Linux</span></h1>
+    <p class="hero-tag">آزمایشگاه امنیتی؛ از مبانی تا تحلیل حرفه‌ای</p>
+    <p class="lead">با یک محیط آموزشی تعاملی، با لینوکس، اصول ارزیابی امنیت، ابزارهای شناخته‌شده و روش مستندسازی یافته‌ها آشنا شو. تمام دستورهای ترمینال این صفحه شبیه‌سازی شده‌اند و روی سیستم واقعی اجرا نمی‌شوند.</p>
+    <div class="cta"><a class="btn primary" href="#terminal">شروع تمرین ترمینال <span>↙</span></a><a class="btn" href="#tools">کاوش ابزارها</a></div>
+    <div class="hero-stats"><div><b>01</b><span>یادگیری گام‌به‌گام</span></div><div><b>04</b><span>راهنمای ابزار ویژه</span></div><div><b>100%</b><span>محیط شبیه‌سازی</span></div></div>
+  </div>
+  <div class="hero-visual"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="hero-window glass"><div class="window-bar"><span class="dots"><i></i><i></i><i></i></span><span>kali@lab: ~</span><span class="window-lock">● SECURE LAB</span></div><div class="hero-code"><p><span class="green">kali@lab</span>:<span class="blue">~</span>$ <span class="typed">whoami</span></p><p class="muted">security learner</p><p><span class="green">kali@lab</span>:<span class="blue">~</span>$ <span class="typed">lab-status</span></p><p><span class="green">●</span> Sandbox ready</p><p><span class="green">●</span> Network isolated</p><p><span class="green">●</span> Learning mode enabled</p><div class="code-line"><span>root access is not the goal.</span><span class="cursor"></span></div></div></div><div class="float-chip chip-top">⌁ <span>Ethical hacking</span></div><div class="float-chip chip-bottom">◈ <span>Learn by doing</span></div></div>
+</header>
+<section id="about" class="wrap section"><div class="section-head"><div><span class="kicker">01 / OVERVIEW</span><h2>Kali Linux چیست؟</h2></div><p>ابزار، دانش و روش‌شناسی در کنار هم معنا پیدا می‌کنند.</p></div>
+  <div class="feature-grid"><article class="feature-card glass feature-main"><span class="card-icon">⌘</span><h3>توزیع تخصصی امنیت</h3><p>Kali Linux توزیعی مبتنی بر Debian است که برای آزمون نفوذ مجاز، ارزیابی امنیت، مهندسی معکوس، فارنزیک دیجیتال و آموزش طراحی شده است. مجموعه ابزارهای آن فرایندهای تخصصی را در یک محیط قابل مدیریت جمع می‌کند.</p><p>وجود ابزار به‌تنهایی امنیت ایجاد نمی‌کند؛ شناخت شبکه، سیستم‌عامل، پروتکل‌ها، ثبت شواهد و تفسیر نتایج بخش مهم‌تری از کار است.</p><div class="tag-row"><span>Debian-based</span><span>Rolling release</span><span>Open source</span></div></article>
+  <article class="feature-card glass"><span class="metric">01</span><h3>محیط آزمایشگاهی</h3><p>برای شروع، ماشین مجازی و Snapshot انتخاب خوبی است؛ اگر آزمایش اشتباه شد، محیط را به وضعیت قبلی برگردان.</p></article>
+  <article class="feature-card glass"><span class="metric">02</span><h3>روش علمی</h3><p>فرضیه بساز، محدوده آزمون را تعریف کن، داده جمع کن، نتیجه را با شواهد توضیح بده و محدودیت‌ها را ثبت کن.</p></article>
+  <article class="feature-card glass"><span class="metric">03</span><h3>مجوز و اخلاق</h3><p>هر آزمایش باید در محدوده‌ای انجام شود که مالکیت یا اجازه صریح و قابل اثبات برای آن داری.</p></article></div>
+</section>
+<section id="learn" class="wrap section"><div class="section-head"><div><span class="kicker">02 / FOUNDATIONS</span><h2>مبانی‌ای که باید بدانی</h2></div><p>پیش از اجرای ابزارهای امنیتی، پایه‌ها را محکم کن.</p></div>
+  <div class="learning-grid">
+    <article class="learn-card glass"><div class="learn-number">A</div><h3>شبکه و آدرس‌دهی</h3><p>IP برای آدرس‌دهی منطقی میزبان‌ها، پورت برای مشخص‌کردن نقطه ارتباط سرویس‌ها و DNS برای تبدیل نام دامنه به رکوردهای شبکه استفاده می‌شود.</p><ul><li>TCP ارتباط قابل‌اعتماد و مرتب ارائه می‌کند.</li><li>UDP سربار کمتری دارد و تضمین تحویل ذاتی ندارد.</li><li>پورت باز الزاماً به معنای آسیب‌پذیری نیست.</li></ul></article>
+    <article class="learn-card glass"><div class="learn-number">B</div><h3>لینوکس و فایل‌سیستم</h3><p>در لینوکس مسیرها از ریشه <code>/</code> آغاز می‌شوند. دسترسی فایل‌ها با مالک، گروه و مجوزهای خواندن، نوشتن و اجرا کنترل می‌شود.</p><ul><li><code>~</code> معمولاً مسیر خانه کاربر است.</li><li><code>.</code> پوشه جاری و <code>..</code> پوشه والد است.</li><li>قبل از حذف یا تغییر فایل، مسیر را بررسی کن.</li></ul></article>
+    <article class="learn-card glass"><div class="learn-number">C</div><h3>هش و رمزنگاری</h3><p>هش تابعی یک‌طرفه برای ساخت اثرانگشت داده است؛ رمزنگاری برای محافظت از محرمانگی از کلید استفاده می‌کند. این دو مفهوم یکسان نیستند.</p><ul><li>هش رمز عبور باید با الگوریتم مناسب و salt ذخیره شود.</li><li>رمز عبور قوی، یکتا و طولانی انتخاب کن.</li><li>ابزار بازیابی هش را فقط روی داده مجاز به کار ببر.</li></ul></article>
+    <article class="learn-card glass"><div class="learn-number">D</div><h3>چرخه ارزیابی امنیت</h3><p>کار حرفه‌ای فرایند قابل تکرار دارد؛ نه اجرای تصادفی دستورها.</p><ol><li>تعریف محدوده و مجوز</li><li>شناسایی و جمع‌آوری شواهد</li><li>اعتبارسنجی کنترل‌شده</li><li>گزارش ریسک و پیشنهاد اصلاح</li></ol></article>
+  </div>
+</section>
+<section id="tools" class="wrap section"><div class="section-head"><div><span class="kicker">03 / TOOLBOX</span><h2>جعبه‌ابزار امنیت</h2></div><p>دسته‌ها را انتخاب کن تا با کاربرد، خروجی و نکته ایمنی ابزارها آشنا شوی.</p></div><div class="tabs" id="tabs" role="tablist" aria-label="دسته‌بندی ابزارها"></div><div class="tool-grid" id="toolGrid"></div></section>
+<section id="spotlight" class="wrap section"><div class="section-head"><div><span class="kicker">04 / DEEP DIVE</span><h2>چهار ابزار، عمیق‌تر</h2></div><p>آشنایی مفهومی و نمونه‌های آموزشی با هدف دفاعی و محیط مجاز.</p></div><div class="deep-grid" id="deepGrid"></div></section>
+<section id="terminal" class="wrap section"><div class="section-head"><div><span class="kicker">05 / PRACTICE</span><h2>ترمینال آموزشی</h2></div><p>دستورها در یک فایل‌سیستم مجازی اجرا می‌شوند؛ هیچ دستور واقعی روی دستگاه اجرا نمی‌شود.</p></div>
+  <div class="terminal-layout"><div class="terminal glass"><div class="term-bar"><div class="dots"><i></i><i></i><i></i></div><span>simulated-shell — bash-like</span><button id="clearTerm" type="button">پاک‌کردن خروجی</button></div><div id="out" class="out" role="log" aria-live="polite"></div><form id="termForm" class="term-input"><label for="inp"><span class="green">learner@kali</span>:<span class="blue" id="cwdLabel">~</span>$</label><input id="inp" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="دستور ترمینال" placeholder="help را وارد کن…"><button type="submit" aria-label="اجرای دستور">↵</button></form><div class="chips" id="chips"></div></div>
+  <aside class="terminal-help glass"><span class="kicker">QUICK GUIDE</span><h3>با فایل‌ها تمرین کن</h3><p>یک پوشه بساز، وارد آن شو، فایل ایجاد کن، داخلش متن بنویس و دوباره بخوان.</p><div class="command-flow"><code>mkdir practice</code><code>cd practice</code><code>touch notes.txt</code><code>echo "Hello Kali" &gt; notes.txt</code><code>cat notes.txt</code></div><p class="tiny-note">این محیط آموزشی ساده است؛ از دستورهای سیستم واقعی پشتیبانی نمی‌کند.</p></aside></div>
+</section>
+
+<section class="creator-section" id="creator">
+    <div class="creator-card">
+
+        <div class="creator-icon"></div>
+
+        <h3 class="creator-label">THE CREATOR</h3>
+
+        <h2>Sayed Adib "Hashemi"</h2>
+
+        <p class="creator-description">
+            Computer Science Student | Linux & Cybersecurity Enthusiast
+        </p>
+
+        <p class="creator-text">
+            This interactive platform is designed to help learners
+            understand Linux and Kali Linux through practical lessons
+            and hands-on learning.
+        </p>
+
+        <div class="creator-links">
+
+            <a href="https://github.com/Adib-Hashemi"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="creator-btn github-btn">
+                GitHub
+            </a>
+
+            <a href="mailto:adibhashemi99@gmail.com"
+               class="creator-btn email-btn">
+                Contact via Gmail
+            </a>
+
+        </div>
+
+        <p class="creator-footer">
+            Designed & Developed by Sayed Adib "Hashemi"
+        </p>
+
+    </div>
+</section>
+
+<section id="install" class="wrap section"><div class="section-head"><div><span class="kicker">06 / SETUP</span><h2>روش‌های اجرای Kali</h2></div><p>روش اجرا را بر اساس هدف، سطح تجربه و سخت‌افزار انتخاب کن.</p></div><div class="install-grid" id="installGrid"></div></section>
+<section id="ethics" class="wrap section"><div class="ethics glass"><div><span class="kicker">07 / RESPONSIBILITY</span><h2>قانون طلایی: مجوز قبل از ابزار</h2><p>تست نفوذ حرفه‌ای باید محدود، مستند و قابل تکرار باشد. بدون اجازه، حتی اسکن یا تلاش برای ورود می‌تواند پیامد حقوقی و عملی داشته باشد.</p></div><ul><li>محدوده، زمان و روش‌های مجاز را از قبل مکتوب کن.</li><li>از آزمایشگاه‌های آموزشی و ماشین‌های خودت استفاده کن.</li><li>داده‌های حساس را جمع‌آوری یا منتشر نکن.</li><li>یافته‌ها را با شواهد و پیشنهاد اصلاح گزارش کن.</li></ul></div></section>
+<section id="quiz" class="wrap section"><div class="section-head"><div><span class="kicker">08 / KNOWLEDGE CHECK</span><h2>آزمون پایانی</h2></div><p>پرسش‌ها از محتوای همین راهنما هستند. گزینه را انتخاب کن تا بازخورد فوری بگیری.</p></div><div class="quiz-shell glass"><div class="quiz-top"><span id="quizProgress">پرسش ۱ از ۱۰</span><span class="score-pill">امتیاز: <b id="quizScore">۰</b></span></div><div class="progress-track"><span id="quizProgressBar"></span></div><div id="quizContent"></div><div class="quiz-actions"><button class="btn" id="quizPrev" type="button">قبلی</button><button class="btn primary" id="quizNext" type="button">پرسش بعدی <span>←</span></button><button class="btn" id="quizRestart" type="button" hidden>شروع دوباره</button></div><p class="quiz-footnote">برای هر پرسش یک پاسخ انتخاب کن. پاسخ درست سبز و پاسخ نادرست قرمز می‌شود.</p></div></section>
+</main>
+<footer><div class="wrap footer-inner"><a class="logo" href="#top"><span class="logo-mark">&gt;_</span><span>Kali<span class="logo-light">Lab</span></span></a><p>یک پروژه آموزشی مستقل؛ وابسته یا مورد تأیید رسمی OffSec نیست. نام Kali Linux متعلق به صاحبان مربوطه است.</p><a href="#top" class="back-top">بازگشت به بالا ↑</a></div></footer>
+<script src="script.js"></script>
+</body></html>
